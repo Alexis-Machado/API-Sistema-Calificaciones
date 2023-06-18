@@ -1,0 +1,75 @@
+{
+	"info": {
+		"_postman_id": "6dddb2de-ee73-400d-a28b-0d2e16005e80",
+		"name": "API Sistema Calificaciones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "25950728"
+	},
+	"item": [
+		{
+			"name": "Sistema Calificaciones",
+			"item": [
+				{
+					"name": "Crear Calificacione",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NumerodelRegistro\":\"2\",\r\n    \"Nombre\":\"Machado Rodríguez Jhon Alexis\",\r\n    \"Edad\":\"20\",\r\n    \"Calificacion\":\"4.5\",\r\n    \"Estado\":\"APROVADO\",\r\n    \"Asignatura\":\"Ingenieria Web\",\r\n    \"FechaCalificacion\":\"17-06-2023\",\r\n    \"Profesor\":\"Julio Martínez\",\r\n    \"NombreAcudiente\":\"Diana Cecilia\",\r\n    \"NumeroContacto\":\"3225960212\",\r\n    \"Email\":\"Dianace123@gmia.com\",\r\n    \"PromedioGeneral\":\"4.3\",\r\n    \"Comentarios\":\"¡Eres un estudiante sobresaliente! ¡Felicidades!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/Calificaciones"
+					},
+					"response": []
+				},
+				{
+					"name": "Mostrar Callificaciones",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "http://localhost:3000/Calificaciones"
+					},
+					"response": []
+				},
+				{
+					"name": "Actualizar Calificaciones",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"NumerodelRegistro\":\"2\",\r\n    \"Nombre\":\"Machado Rodríguez Jhon Alexis\",\r\n    \"Edad\":\"20\",\r\n    \"Calificacion\":\"4.7\",\r\n    \"Estado\":\"APROVADO\",\r\n    \"Asignatura\":\"Ingenieria Web\",\r\n    \"FechaCalificacion\":\"17-06-2023\",\r\n    \"Profesor\":\"Julio Martínez\",\r\n    \"NombreAcudiente\":\"Diana Cecilia\",\r\n    \"NumeroContacto\":\"3225960212\",\r\n    \"Email\":\"Dianace123@gmia.com\",\r\n    \"PromedioGeneral\":\"4.3\",\r\n    \"Comentarios\":\"¡Eres un estudiante sobresaliente! ¡Felicidades!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/Calificaciones/648deee79da0a7c8f89c71e7"
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Calificación",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/Calificaciones/648e487040f32688930b4112"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
